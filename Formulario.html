@@ -1,0 +1,168 @@
+<! DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="STYLESHEET" type="text/css" href="Style.css">
+        <title> Soccer League </title>
+    </head>
+
+    <body>
+        <div class="my_logo">
+            <img src="nysl_logo.png" alt="nysl_logo" width="150" height="150">
+            <h1 class="Titulo"> Northside Youth Soccer League </h1>
+        </div>
+        <header class="encabezado">
+            <nav class="flotante">
+                <a class="menu" href="index.html"> Home </a>
+                <a class="menu" href="about.html"> About NYSL </a>
+                <a class="menu" href="contact.html"> Contact </a>
+                <a class="menu" href="Rules.html"> Rules </a>
+                <a class="menu" href="Game_info.html"> Game_info </a>
+                <a class="menu-active" href="formulario.html">Inscripción </a>
+
+            </nav>
+            <div class="imag_fondo1"></div>
+            <div class="imag_fondo2"></div>
+        </header>
+
+        <section>
+            <h2 class="Subtitulo"> Formulario de Inscripción </h2>
+        </section>
+
+        <form action="show_data.html">
+            <div class="form-header">
+                <div class="nombre">
+                    <label for="nombre"><b>Nombre</b></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" requerido />
+                    <label for="apellidos"><b>Apellidos</b></label>
+                    <input type="text" name="apellidos" id="apellidos" placeholder="Apellido" requerido />
+                </div>
+                <div class="FN-genero">
+                    <label for="fecha-nacimiento"><b>Fecha de Nacimiento:</b></label>
+                    <input type="date" id="fecha-nacimiento" placeholder="fecha-nacimiento" requerido>
+                    <label for="Genero"> <b>Género:</b></label>
+                    <label for="Mujer"><b>Mujer</b> </label>
+                    <input type="radio" id="mujer" name="genero" value="mujer">
+                    <label for="hombre"><b>hombre</b></label>
+                    <input type="radio" id="hombre" name="genero" value="hombre">
+                </div>
+                <div class="direccion">
+                    <label for="Direccion"><b>Dirección:</b></label>
+                    <input type="text" id="Direccion" name="Direccion">
+                </div>
+                <div class="ciudad">
+                    <label for="Ciudad"><b>Ciudad:</b></label>
+                    <input type="text" id="ciudad" name="ciudad">
+                    <label for="Codigo-postal"><b>Código Postal:</b></label>
+                    <input type="number" id="codigo-postal" name="codigo-postal">
+                </div>
+                <div class="form-contacto">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" name="email" id="email" placeholder="email" required />
+
+                    <label for="phone"><b>Telefono:</b></label>
+                    <input type="phone" name="phone" id="phone" placeholder="phone" required />
+                </div>
+            </div>
+
+            <div class="form-main">
+                <div class="grado">
+                    <p><strong>* Grado escolar</strong></p><br>
+                    <input type="radio" id="preescolar" name="preescolar">
+                    <label for="Preescolar"> <b>Preescolar</b></label><br>
+                    <input type="radio" id="1o" name="1o">
+                    <label for="1o"><b>1°</b></label><br>
+                    <input type="radio" id="2o" name="2o">
+                    <label for="2o"><b>2°</b></label><br>
+                    <input type="radio" id="3o" name="3o">
+                    <label for="3o"><b>3°</b></label><br>
+                    <input type="radio" id="4o" name="4o">
+                    <label for="4o"><b>4°</b></label><br>
+                    <input type="radio" id="5" name="5">
+                    <label for="5o"><b>5°</b></label><br><br>
+                </div>
+                <div class="escuelas">
+                    <p><strong> * ¿De que escuela vives mas cerca?</strong></p><br>
+                    <label for="escuelas"><b>Escuela mas cercana:</b></label>
+                    <select id="escuelas" name="escuelas">
+                        <option value="elige una escuela" selected>Elige una escuela</option>
+                        <option value="AJ-Katzenmaier">AJ-Katzenmaier</option>
+                        <option value="greenbay">Greenbay</option>
+                        <option value="Howard-A-Yeager">Howard-A-Yeager</option>
+                        <option value="Marjorie-P-Hart">Marjorie-P-Hart</option>
+                        <option value="North-Elementary">North-Elementary</option>
+                        <option value="South-Elementary">South-Elementary</option>
+                    </select>
+                </div>
+                <div class="Posicion-juego">
+                    <p><strong> * ¿Que posición(es) juegas normalmente? (marque todas las que
+                            correspondan)</strong></p><br>
+                    <input type="checkbox" id="Delantero" name="Delantero">
+                    <label for="Delantero"> <b>Delantero</b></label>
+                    <input type="checkbox" id="Portero" name="Portero">
+                    <label for="Portero"><b>Portero</b></label>
+                    <input type="checkbox" id="Mediocampo" name="Mediocampo">
+                    <label for="Mediocampo"><b>Mediocampo</b></label>
+                    <input type="checkbox" id="Defensa" name="Defensa">
+                    <label for="Defensa"><b>Defensa</b></label>
+                </div>
+                <div class="talla-Uniforme">
+                    <p><strong> * Tamaño Uniforme</strong></p><br>
+                    <input type="radio" id="Nino-P" name="Nino-P">
+                    <label for="Nino-P"><b> Niño P</b></label>
+                    <input type="radio" id="Nino-M" name="Nino-M">
+                    <label for="Nino-M"><b> Niño M</b></label>
+                    <input type="radio" id="Nino-G" name="Nino-G">
+                    <label for="Nino-G"><b> Niño G</b></label>
+                    <input type="radio" id="Pequeño" name="Pequeño">
+                    <label for="Pequeño"><b>Pequeño</b></label>
+                    <input type="radio" id="Mediano" name="Mediano">
+                    <label for="Mediano"><b>Mediano</b></label>
+                    <input type="radio" id="Grande" name="Grande">
+                    <label for="Grande"><b>Grande</b></label>
+                    <input type="radio" id="Extra-Grande" name="Extra-Grande">
+                    <label for="Extra-Grande"><b>Extra-Grande</b></label>
+                </div>
+            </div>
+
+            <div class="form-footer">
+                <div class="Pemiso">
+                    <h2>Permiso Para Jugar</h2> <br><br>
+                    <p> Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el
+                        solicitante de registro y
+                        yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la
+                        posibilidad de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al
+                        solicitante de registro para sus programas y actividades de fútbol, Por la presente libero y
+                        descargo a NYSL,
+                        sus empleados y personal asociado y voluntarios, incluyendo las instalaciones utilizadas para
+                        prácticas
+                        y juegos, contra cualquier reclamo por o en nombre del solicitante del registro como resultado
+                        de
+                        la
+                        participación del solicitante del programa a o en el transporte desde o hacia las actividades
+                        patrocinadas
+                        por NYSL.
+                        <br><br>
+                        Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a
+                        continuación,
+                        reconozco
+                        que he leído la política de cancelación y acepto sus términos.
+                    </p>
+                </div>
+                <div class="Firma">
+                    <label for="Firma-padre-tutor"><strong>Firma Padre/Tutor</strong></label>
+                    <input type="text" id="Firma-padre-tutor" placeholder="Firma-padre-tutor" required>
+                    <label for="Fecha"><b>Fecha</b></label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+            </div>
+            <div class="user_button">
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Registrar">
+            </div>
+            
+        </form>
+    </body>
+
+    </html>
